@@ -1,0 +1,29 @@
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20%,
+  60% {
+    transform: translateX(-10px);
+  }
+  40%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+    color: #22c55e;
+  } /* Tailwind color: green-500 */
+}
+.animate-scale {
+  animation: scale 0.3s ease-in-out forwards;
+}
